@@ -19,7 +19,7 @@ class Test_kodlamaio:
     def teardown_method(self):
         self.driver.quit()
 
-    @pytest.mark.skipt
+    @pytest.mark.skip
     @pytest.mark.parametrize("username,password",[("halit","halit"),("engin","engin"),("ahmet","ahmet")])
     def test_login(self,username,password):
         assert username==password
